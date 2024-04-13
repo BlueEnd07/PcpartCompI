@@ -11,6 +11,8 @@ export default function Search() {
     event.preventDefault();
     setIsLoading(true);
 
+    setFetchData(null);
+
     try {
       const searchItem = event.target.elements.search.value;
       const response = await axios.request({
@@ -47,13 +49,19 @@ export default function Search() {
           />
         </div>
 
-        <button
-          type="submit"
-          className="rounded-lg border-2 text-3xl px-16 py-4 m-10 bg-white hover:bg-gray-300 hover:scale-110 transition-all ease-in-out"
-          disabled={isLoading}
-        >
-          {isLoading ? "Searching..." : "Search"}
-        </button>
+        {isLoading ? (
+          <button
+            type="submit"
+            className="rounded-lg border-2 text-3xl px-16 py-4 m-10 bg-white animate-pulse cursor-wait"
+            disabled={isLoading}
+          >Searching.....</button>
+        ) : (
+          <button
+            type="submit"
+            className="rounded-lg border-2 text-3xl px-16 py-4 m-10 bg-white hover:bg-gray-300 hover:scale-110 transition-all ease-in-out"
+            disabled={isLoading}
+          >Search</button>
+        )}
       </form>
     </div>
   );
