@@ -1,28 +1,30 @@
-#Pc part picker 
-a site for comparing price from different website and different vendors to get the best price from all over the internet in India
+# PC Part Picker
 
-this is just a hobby project to learn how react and web works 
-##learnings or to learn
-[x]Basic react
-[]router
-[]animation in react
-[]Redux
-[]Authentication
-[]database
+A site for comparing prices from different websites and vendors to find the best deals from across the internet in India. This is just a hobby project to learn about React and web development.
 
-##TODO
+## Learning Goals
 
-[x]init project
-[x] install tailwind
-[x]make a search bar
-[x]connect to backend
-[x]set up context API
-[x]properly load data from API
-[x]add skeleton UI and disable features 
-[]add content in other pages
-[]add database
-[]add advancement API
-[]add login
-[]add cart system
-[]add affiliate links
-[]extra optimizations
+- [x] Basic React
+- [ ] Router
+- [ ] Animation in React
+- [ ] Redux
+- [ ] Authentication
+- [ ] Database
+
+## TODO
+
+- [x] Initiate project
+- [x] Install Tailwind
+- [x] Create a search bar
+- [x] Connect to backend (Specify what backend you're using)
+- [x] Set up Context API (Explain what this is for)
+- [x] Properly load data from API
+- [x] Add skeleton UI and disable features 
+- [ ] Add content to other pages
+- [ ] Add database (Specify the type of database)
+- [ ] Integrate advancement API (Specify the API)
+- [ ] Implement login functionality
+- [ ] Develop a cart system
+- [ ] Incorporate affiliate links
+- [ ] Perform extra optimizations
+
