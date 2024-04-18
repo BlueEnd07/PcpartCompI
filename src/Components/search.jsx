@@ -18,7 +18,8 @@ export default function Search() {
       const response = await axios.request({
         method: "GET",
         // url:`https://js-web-scrapper.onrender.com/scrape?product=${searchItem}`,
-        url: `    "http://lokesh-rawat.site/scrape?product=${searchItem}`,
+        // url: `  "http://localhost:3000/scrape?product=${searchItem}`,
+        url: `  "http://lokesh-rawat.site/scrape?product=${searchItem}`,
         headers: {
           "Content-Type": "application/json",
           "User-Agent": "insomnia/2023.5.8",
