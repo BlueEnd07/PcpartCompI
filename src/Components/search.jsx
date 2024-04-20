@@ -18,9 +18,8 @@ export default function Search() {
       const searchItem = event.target.elements.search.value;
       const response = await axios.request({
         method: "POST",
-        // url:`https://js-web-scrapper.onrender.com/scrape?product=${searchItem}`,
-        url: `http://localhost:3000/scrape`,
-        // url: `  "http://lokesh-rawat.site/scrape?product=${searchItem}`,
+        url:`https://js-web-scrapper.onrender.com/scrape`,
+        // url: `http://localhost:3000/scrape`,
         headers: {
           "Content-Type": "application/json",
         },
