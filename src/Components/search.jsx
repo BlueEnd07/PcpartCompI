@@ -12,21 +12,25 @@ export default function Search() {
     setIsLoading(true);
 
     setFetchData(null);
+    
 
     try {
       const searchItem = event.target.elements.search.value;
       const response = await axios.request({
-        method: "GET",
+        method: "POST",
         // url:`https://js-web-scrapper.onrender.com/scrape?product=${searchItem}`,
-        // url: `  "http://localhost:3000/scrape?product=${searchItem}`,
-        url: `  "http://lokesh-rawat.site/scrape?product=${searchItem}`,
+        url: `http://localhost:3000/scrape`,
+        // url: `  "http://lokesh-rawat.site/scrape?product=${searchItem}`,
         headers: {
           "Content-Type": "application/json",
-          "User-Agent": "insomnia/2023.5.8",
         },
+        data:{
+          product:searchItem,
+        }
       });
 
       setFetchData(response.data);
+      console.log(response.data);
     } catch (err) {
       setError(err);
       console.error("Error fetching data:", err);

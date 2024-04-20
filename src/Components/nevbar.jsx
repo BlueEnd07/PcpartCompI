@@ -20,7 +20,7 @@ export default function Nevbar() {
         </div>
 
         <div className="main-hedline text-7xl py-10 bg-opacity-40  max-w-fit mx-auto p-10 rounded-2xl">
-          Last place in search of grate pc parts
+          Last place in search of pc parts
         </div>
 
       </div>
